@@ -7,60 +7,120 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to TRETMAX</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+    <header class="site-header">
+        <div class="container">
+            <h1>TRETMAX</h1>
+            <p class="tagline">Digital solutions built with precision</p>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html" aria-current="page">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <main>
-        <section>
-            <h2>Our Services</h2>
-            <p>TRETMAX offers comprehensive digital solutions tailored to your needs:</p>
-            
-            <h3>Web Development</h3>
-            <p>Create responsive and dynamic websites that engage your audience. From simple websites to complex web applications, we build solutions that work seamlessly across all devices.</p>
-            <ul>
-                <li>Frontend Development (HTML, CSS, JavaScript)</li>
-                <li>Backend Development</li>
-                <li>Full-stack web solutions</li>
-                <li>E-commerce platforms</li>
-            </ul>
-            
-            <h3>Graphic Design</h3>
-            <p>Professional visual design and branding that makes your business stand out. We create memorable visual identities that resonate with your target audience.</p>
-            <ul>
-                <li>Logo design</li>
-                <li>Branding and identity</li>
-                <li>UI/UX design</li>
-                <li>Marketing materials</li>
-            </ul>
-            
-            <h3>App Development</h3>
-            <p>Mobile and desktop applications that solve real problems. We develop native and cross-platform applications with intuitive user interfaces.</p>
-            <ul>
-                <li>Android app development</li>
-                <li>iOS app development</li>
-                <li>Cross-platform applications</li>
-                <li>Desktop software</li>
-            </ul>
-            
-            <h3>Cyber Security</h3>
-            <p>Protect your digital assets from threats. We provide comprehensive security solutions to safeguard your data and systems.</p>
-            <ul>
-                <li>Security audits</li>
-                <li>Vulnerability assessments</li>
-                <li>Data protection</li>
-                <li>Security consulting</li>
-            </ul>
+
+    <main class="container">
+        <section class="hero compact">
+            <p class="eyebrow">Our Services</p>
+            <h2>Digital Services Designed for Real Business Impact</h2>
+            <p>We combine engineering, design, and security to move ideas from concept to production with clarity and speed.</p>
+        </section>
+
+        <section class="grid services-grid">
+            <article class="card service-card">
+                <h3>Web Development</h3>
+                <p>High-performance websites and web apps built for growth and reliability.</p>
+                <ul>
+                    <li>Custom frontend interfaces</li>
+                    <li>Backend APIs and admin systems</li>
+                    <li>Performance and SEO optimization</li>
+                    <li>E-commerce and booking platforms</li>
+                </ul>
+            </article>
+
+            <article class="card service-card">
+                <h3>Graphic and Brand Design</h3>
+                <p>Visual systems that make your message instantly recognizable and easier to trust.</p>
+                <ul>
+                    <li>Logo and identity systems</li>
+                    <li>Marketing creative packs</li>
+                    <li>UI kits and design handoff files</li>
+                    <li>Brand guideline documents</li>
+                </ul>
+            </article>
+
+            <article class="card service-card">
+                <h3>App Development</h3>
+                <p>Mobile and desktop applications that solve operational and customer-facing problems.</p>
+                <ul>
+                    <li>Android and iOS development</li>
+                    <li>Cross-platform app stacks</li>
+                    <li>Offline-first workflows</li>
+                    <li>Maintenance and upgrades</li>
+                </ul>
+            </article>
+
+            <article class="card service-card">
+                <h3>Cyber Security</h3>
+                <p>Security practices and technical checks to protect your systems before threats become incidents.</p>
+                <ul>
+                    <li>Risk and vulnerability assessments</li>
+                    <li>Secure architecture guidance</li>
+                    <li>Policy and access hardening</li>
+                    <li>Incident readiness planning</li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="card">
+            <h3>Delivery Workflow</h3>
+            <div class="process-grid">
+                <article class="step">
+                    <p class="step-tag">Week 1</p>
+                    <h4>Scope & Plan</h4>
+                    <p>We define scope, budget range, timeline, and key milestones.</p>
+                </article>
+                <article class="step">
+                    <p class="step-tag">Week 2+</p>
+                    <h4>Design & Build</h4>
+                    <p>We execute in short cycles so progress is visible and reviewable.</p>
+                </article>
+                <article class="step">
+                    <p class="step-tag">QA</p>
+                    <h4>Test & Secure</h4>
+                    <p>Cross-device checks, bug fixes, and security review before launch.</p>
+                </article>
+                <article class="step">
+                    <p class="step-tag">Launch</p>
+                    <h4>Deploy & Support</h4>
+                    <p>We release safely and stay available for optimization.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="card">
+            <h3>Popular Add-ons</h3>
+            <div class="pill-list">
+                <span>Analytics Setup</span>
+                <span>Team Training</span>
+                <span>Content Migration</span>
+                <span>Automated Backups</span>
+                <span>Monitoring Dashboards</span>
+                <span>Documentation Packs</span>
+            </div>
+        </section>
+
+        <section class="cta-panel">
+            <h3>Ready to Start?</h3>
+            <p>Share your target launch date and we will propose the right service mix.</p>
+            <a class="cta" href="contact.html">Request a Quote</a>
         </section>
     </main>
-    <footer>
+
+    <footer class="site-footer">
         <p>&copy; 2026 TRETMAX. All rights reserved.</p>
     </footer>
     <script src="script.js"></script>
