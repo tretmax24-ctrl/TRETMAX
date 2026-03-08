@@ -107,7 +107,7 @@ function setupContactFormValidation() {
             feedback.classList.add('is-success');
             form.reset();
         } catch (error) {
-            feedback.textContent = 'Could not send right now. Please email tretmax24@gmail.com or WhatsApp +25673008064 directly.';
+            feedback.textContent = 'Could not send right now. Please email tretmax24@gmail.com or WhatsApp 0730008064 directly.';
             feedback.classList.add('is-error');
         } finally {
             setSubmitState(submitButton, false, defaultButtonText);
@@ -170,7 +170,7 @@ function setupFloatingWhatsAppButton() {
     const message = encodeURIComponent('Hi TRETMAX, I would like to discuss a project.');
     const button = document.createElement('a');
     button.className = 'floating-wa';
-    button.href = `https://wa.me/25673008064?text=${message}`;
+    button.href = `https://wa.me/256730008064?text=${message}`;
     button.target = '_blank';
     button.rel = 'noopener';
     button.setAttribute('aria-label', 'Chat with TRETMAX on WhatsApp');
