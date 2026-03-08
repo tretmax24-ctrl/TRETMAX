@@ -16,6 +16,7 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
                     <li><a href="contact.html" aria-current="page">Contact</a></li>
                 </ul>
             </nav>
@@ -25,7 +26,7 @@
     <main class="container">
         <section class="hero compact">
             <p class="eyebrow">Contact</p>
-            <h2>Let’s Build Something Useful</h2>
+            <h2>Let's Build Something Useful</h2>
             <p>Share your goals and constraints. You will get a practical response within 24 hours.</p>
         </section>
 
@@ -33,14 +34,103 @@
             <article class="card">
                 <h3>Reach Us</h3>
                 <p><strong>Email:</strong> <a href="mailto:tretmax24@gmail.com">tretmax24@gmail.com</a></p>
+                <p>
+                    <strong>WhatsApp:</strong>
+                    <a class="wa-inline" href="https://wa.me/25673008064" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+                        <span class="wa-logo" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+                                <path d="M12 2a10 10 0 0 0-8.66 15l-1.1 4 4.1-1.08A10 10 0 1 0 12 2Zm0 18a8 8 0 0 1-4.08-1.12l-.29-.17-2.43.64.65-2.37-.19-.3A8 8 0 1 1 12 20Zm4.26-5.83c-.23-.12-1.36-.67-1.58-.74s-.38-.12-.54.12-.62.74-.76.89-.28.17-.51.06a6.54 6.54 0 0 1-1.93-1.19 7.22 7.22 0 0 1-1.34-1.67c-.14-.24 0-.36.11-.48.1-.1.23-.25.34-.37a1.41 1.41 0 0 0 .23-.39.43.43 0 0 0 0-.4c-.06-.12-.54-1.29-.74-1.77s-.39-.4-.54-.41h-.46a.9.9 0 0 0-.64.3 2.69 2.69 0 0 0-.84 2A4.68 4.68 0 0 0 8.6 13a10.69 10.69 0 0 0 4.09 3.61 13.87 13.87 0 0 0 1.36.5 3.3 3.3 0 0 0 1.5.1 2.45 2.45 0 0 0 1.61-1.14 2 2 0 0 0 .14-1.14c-.06-.08-.22-.13-.45-.25Z"/>
+                            </svg>
+                        </span>
+                        <span>+25673008064</span>
+                    </a>
+                </p>
                 <p><strong>Location:</strong> Kampala, Uganda</p>
                 <p><strong>Developer:</strong> Twesigye Treasure</p>
             </article>
             <article class="card">
                 <h3>Service Coverage</h3>
                 <p>We support clients across Uganda and international teams through remote collaboration and clear milestones.</p>
-                <p>Need urgent support? Mark your message as priority in the email subject.</p>
+                <p>Need urgent support? Mark your message as priority in the subject line.</p>
             </article>
+        </section>
+
+        <section class="card">
+            <div class="section-head">
+                <span class="section-icon" aria-hidden="true">01</span>
+                <h3>Project Request Form</h3>
+            </div>
+            <div class="section-rule"></div>
+            <form
+                id="contactForm"
+                class="contact-form"
+                action="https://formsubmit.co/ajax/tretmax24@gmail.com"
+                method="POST"
+                novalidate
+            >
+                <input type="hidden" name="_subject" value="New TRETMAX Project Request">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="text" name="_honey" autocomplete="off" tabindex="-1" class="hidden-trap">
+                <div class="form-grid">
+                    <div class="field">
+                        <label for="name">Full Name</label>
+                        <input id="name" name="name" type="text" placeholder="Your name" required>
+                        <p class="field-error" data-error-for="name"></p>
+                    </div>
+
+                    <div class="field">
+                        <label for="email">Email Address</label>
+                        <input id="email" name="email" type="email" placeholder="you@example.com" required>
+                        <p class="field-error" data-error-for="email"></p>
+                    </div>
+
+                    <div class="field">
+                        <label for="service">Service Needed</label>
+                        <select id="service" name="service" required>
+                            <option value="">Select a service</option>
+                            <option>Web Development</option>
+                            <option>Graphic and Brand Design</option>
+                            <option>App Development</option>
+                            <option>Cyber Security</option>
+                            <option>Mixed Package</option>
+                        </select>
+                        <p class="field-error" data-error-for="service"></p>
+                    </div>
+
+                    <div class="field">
+                        <label for="budget">Estimated Budget</label>
+                        <select id="budget" name="budget" required>
+                            <option value="">Select budget range</option>
+                            <option>USD 300 - 700</option>
+                            <option>USD 800 - 1,800</option>
+                            <option>USD 2,000+</option>
+                            <option>Need guidance first</option>
+                        </select>
+                        <p class="field-error" data-error-for="budget"></p>
+                    </div>
+
+                    <div class="field full-width">
+                        <label for="message">Project Details</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Share goals, timeline, and any specific requirements" required></textarea>
+                        <p class="field-error" data-error-for="message"></p>
+                    </div>
+                </div>
+
+                <p class="form-note">After submitting, we will follow up within 24 hours. You can also reach us on WhatsApp at +25673008064.</p>
+                <div class="form-actions">
+                    <button class="cta" type="submit">Send Request</button>
+                    <a class="cta whatsapp-cta" href="https://wa.me/25673008064" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+                        <span class="wa-logo" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+                                <path d="M12 2a10 10 0 0 0-8.66 15l-1.1 4 4.1-1.08A10 10 0 1 0 12 2Zm0 18a8 8 0 0 1-4.08-1.12l-.29-.17-2.43.64.65-2.37-.19-.3A8 8 0 1 1 12 20Zm4.26-5.83c-.23-.12-1.36-.67-1.58-.74s-.38-.12-.54.12-.62.74-.76.89-.28.17-.51.06a6.54 6.54 0 0 1-1.93-1.19 7.22 7.22 0 0 1-1.34-1.67c-.14-.24 0-.36.11-.48.1-.1.23-.25.34-.37a1.41 1.41 0 0 0 .23-.39.43.43 0 0 0 0-.4c-.06-.12-.54-1.29-.74-1.77s-.39-.4-.54-.41h-.46a.9.9 0 0 0-.64.3 2.69 2.69 0 0 0-.84 2A4.68 4.68 0 0 0 8.6 13a10.69 10.69 0 0 0 4.09 3.61 13.87 13.87 0 0 0 1.36.5 3.3 3.3 0 0 0 1.5.1 2.45 2.45 0 0 0 1.61-1.14 2 2 0 0 0 .14-1.14c-.06-.08-.22-.13-.45-.25Z"/>
+                            </svg>
+                        </span>
+                        <span>Chat on WhatsApp</span>
+                    </a>
+                    <p id="formFeedback" class="form-feedback" aria-live="polite"></p>
+                </div>
+            </form>
         </section>
     </main>
 
@@ -50,3 +140,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+
